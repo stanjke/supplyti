@@ -10,9 +10,9 @@
 
   <body>
     <header class="navigation">
-      <div class="logo">
+      <div class="navigation__logo">
         <h1 class="visually-hidden">Название сайта</h1>
-        <img src="./images/Logo_SUPPLY TI_003.jpg" alt="Логотип сайта" />
+        <img class="navigation__img" src="./images/Logo_SUPPLY TI_003.jpg" alt="Логотип сайта" />
       </div>
       <nav class="navigation__container">
         <ul class="navigation__menu">
@@ -43,9 +43,15 @@
           </li>
         </ul>
       </nav>
-      <h1 id="welcome">Welcome to our website!</h1>
+      <div class="switch">
+        <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox" />
+        <label for="language-toggle"></label>
+        <span class="on" data-lang="en">ENG</span>
+        <span class="off" data-lang="ua">UKR</span>
+      </div>
     </header>
     <main>
+      <h1 id="welcome">Welcome to our website!</h1>
       <section class="hero">
         <h2 id="hero-title">Supply Trading International</h2>
         <button class="hero__button--down"></button>
@@ -109,11 +115,6 @@
         </form>
       </section>
       <p id="contact">Contact Us</p>
-      <label for="language-selector">Select language:</label>
-      <select id="language-selector">
-        <option value="en">English</option>
-        <option value="ua">Ukraine</option>
-      </select>
     </main>
     <footer>
       <p>&copy; 2021 Supply Trading International</p>

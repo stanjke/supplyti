@@ -1,6 +1,7 @@
 const translations = {};
 
 function loadTranslations(language) {
+  console.log("Loading language:", language);
   return fetch(`src/i18n/locales/${language}.json`)
     .then((response) => {
       if (!response.ok) {
@@ -13,7 +14,7 @@ function loadTranslations(language) {
       applyTranslations(); // Apply translations after loading
     })
     .catch((error) => {
-      console.error("Error loading translations:", error);
+      console.warn("Error loading translations:", error);
     });
 }
 
@@ -27,16 +28,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const defaultLang = "en";
   document.documentElement.lang = defaultLang;
   loadTranslations(defaultLang);
+  handleTranslate(); // Initialize language toggle handler
 });
-
-// Handle language change
-
-export const handleTranslate = () =>
-  document.getElementById("language-selector").addEventListener("change", (event) => {
-    const selectedLang = event.target.value;
-    document.documentElement.lang = selectedLang; // Update the lang attribute
-    loadTranslations(selectedLang);
-  });
 
 function applyTranslations() {
   document.querySelectorAll(".navigation__name").forEach((el) => {
@@ -44,4 +37,19 @@ function applyTranslations() {
   });
   document.getElementById("welcome").textContent = translate("welcome_message");
   document.getElementById("contact").textContent = translate("contact_us");
+}
+
+// Handle language change
+export function handleTranslate() {
+  const toggle = document.querySelector(".language-toggle");
+  if (toggle) {
+    toggle.addEventListener("change", (event) => {
+      const isChecked = event.target.checked;
+      const selectedLang = isChecked ? "en" : "ua"; // 'en' if checked, 'ua' otherwise
+      document.documentElement.lang = selectedLang; // Update the lang attribute
+      loadTranslations(selectedLang);
+    });
+  } else {
+    console.warn("Language toggle element not found.");
+  }
 }
