@@ -10,49 +10,60 @@
 
   <body>
     <header class="navigation">
-      <div class="navigation__logo">
-        <h1 class="visually-hidden">Название сайта</h1>
-        <img class="navigation__img" src="./images/Logo_SUPPLY TI_003.jpg" alt="Логотип сайта" />
-      </div>
-      <nav class="navigation__container">
-        <ul class="navigation__menu">
-          <li class="navigation__item">
-            <a href="" class="navigation__link">
-              <span id="home" class="navigation__name">home</span>
-            </a>
-          </li>
-          <li class="navigation__item">
-            <a href="" class="navigation__link">
-              <span id="services" class="navigation__name">services</span>
-            </a>
-          </li>
-          <li class="navigation__item">
-            <a href="" class="navigation__link">
-              <span id="about" class="navigation__name">about</span>
-            </a>
-          </li>
-          <li class="navigation__item">
-            <a href="" class="navigation__link">
-              <span id="projects" class="navigation__name">projects</span>
-            </a>
-          </li>
-          <li class="navigation__item">
-            <a href="" class="navigation__link">
-              <span id="contact" class="navigation__name">contact</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div class="switch">
-        <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox" />
-        <label for="language-toggle"></label>
-        <span class="on" data-lang="en">ENG</span>
-        <span class="off" data-lang="ua">UKR</span>
+      <div class="container">
+        <div class="navigation__wrapper">
+          <div class="navigation__logo">
+            <h1 class="visually-hidden">supply trading International</h1>
+            <img class="navigation__img" src="./images/Logo_SUPPLY TI_003.jpg" alt="Логотип сайта" />
+          </div>
+          <nav class="navigation__container">
+            <ul class="navigation__menu">
+              <li class="navigation__item">
+                <a href="" class="navigation__link">
+                  <span id="home" class="navigation__name">home</span>
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a href="" class="navigation__link">
+                  <span id="services" class="navigation__name">services</span>
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a href="" class="navigation__link">
+                  <span id="about" class="navigation__name">about</span>
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a href="" class="navigation__link">
+                  <span id="projects" class="navigation__name">projects</span>
+                </a>
+              </li>
+              <li class="navigation__item">
+                <a href="" class="navigation__link">
+                  <span id="contact" class="navigation__name">contact</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="switch">
+            <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox" />
+            <label for="language-toggle"></label>
+            <span class="on" data-lang="en">ENG</span>
+            <span class="off" data-lang="ua">UKR</span>
+          </div>
+        </div>
       </div>
     </header>
     <main>
       <h1 id="welcome">Welcome to our website!</h1>
       <section class="hero">
+        <div class="video-background">
+          <video autoplay loop muted playsinline>
+            <source src="./video/file.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
         <h2 id="hero-title">Supply Trading International</h2>
         <button class="hero__button--down"></button>
       </section>
