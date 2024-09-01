@@ -1,7 +1,6 @@
 const translations = {};
 
 function loadTranslations(language) {
-  console.log("Loading language:", language);
   return fetch(`src/i18n/locales/${language}.json`)
     .then((response) => {
       if (!response.ok) {
@@ -24,12 +23,6 @@ function translate(key) {
 }
 
 // Load default language
-document.addEventListener("DOMContentLoaded", () => {
-  const defaultLang = "en";
-  document.documentElement.lang = defaultLang;
-  loadTranslations(defaultLang);
-  handleTranslate(); // Initialize language toggle handler
-});
 
 function applyTranslations() {
   document.querySelectorAll(".navigation__name").forEach((el) => {
@@ -40,12 +33,12 @@ function applyTranslations() {
 }
 
 // Handle language change
-export function handleTranslate() {
-  const toggle = document.querySelector(".language-toggle");
+function handleTranslate() {
+  const toggle = document.querySelector("#language-toggle");
   if (toggle) {
     toggle.addEventListener("change", (event) => {
       const isChecked = event.target.checked;
-      const selectedLang = isChecked ? "en" : "ua"; // 'en' if checked, 'ua' otherwise
+      const selectedLang = isChecked ? "ua" : "en"; // 'en' if checked, 'ua' otherwise
       document.documentElement.lang = selectedLang; // Update the lang attribute
       loadTranslations(selectedLang);
     });
@@ -53,3 +46,12 @@ export function handleTranslate() {
     console.warn("Language toggle element not found.");
   }
 }
+
+export const initTranslations = () => {
+  document.addEventListener("DOMContentLoaded", () => {
+    const defaultLang = "en";
+    document.documentElement.lang = defaultLang;
+    loadTranslations(defaultLang);
+    handleTranslate();
+  });
+};
