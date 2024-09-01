@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/Untitled.png" />
     <link rel="stylesheet" href="./style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Supply Trading International</title>
@@ -10,6 +10,10 @@
 
   <body>
     <header class="navigation">
+      <div class="logo">
+        <h1 class="visually-hidden">Название сайта</h1>
+        <img src="./images/Logo_SUPPLY TI_003.jpg" alt="Логотип сайта" />
+      </div>
       <nav class="navigation__container">
         <ul class="navigation__menu">
           <li class="navigation__item">
@@ -42,6 +46,68 @@
       <h1 id="welcome">Welcome to our website!</h1>
     </header>
     <main>
+      <section class="hero">
+        <h2 id="hero-title">Supply Trading International</h2>
+        <button class="hero__button--down"></button>
+      </section>
+      <section class="services">
+        <h2 id="services-title">Our Services</h2>
+        <div class="services__container">
+          <div class="services__item">
+            <img src="./images/1.jpg" alt="Service 1" />
+            <h3 id="service1-title">Service 1</h3>
+            <p id="service1-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget felis eget nunc lacinia.</p>
+          </div>
+          <div class="services__item">
+            <img src="./images/2.jpg" alt="Service 2" />
+            <h3 id="service2-title">Service 2</h3>
+            <p id="service2-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget felis eget nunc lacinia.</p>
+          </div>
+          <div class="services__item">
+            <img src="./images/3.jpg" alt="Service 3" />
+            <h3 id="service3-title">Service 3</h3>
+            <p id="service3-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget felis eget nunc lacinia.</p>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <h2 id="about-title">About Us</h2>
+        <p id="about-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      </section>
+      <section class="metric"></section>
+      <section class="projects">
+        <h2 id="projects-title">Our Projects</h2>
+        <div class="projects__container">
+          <div class="projects__item">
+            <img src="./images/1.jpg" alt="Project 1" />
+            <h3 id="project1-title">Project 1</h3>
+            <p id="project1-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget felis eget nunc lacinia.</p>
+          </div>
+          <div class="projects__item">
+            <img src="./images/2.jpg" alt="Project 2" />
+            <h3 id="project2-title">Project 2</h3>
+            <p id="project2-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget felis eget nunc lacinia.</p>
+          </div>
+          <div class="projects__item">
+            <img src="./images/3.jpg" alt="Project 3" />
+            <h3 id="project3-title">Project 3</h3>
+            <p id="project3-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget felis eget nunc lacinia.</p>
+          </div>
+        </div>
+      </section>
+      <section class="clients"></section>
+      <section class="contact">
+        <h2 id="contact-title">Contact Us</h2>
+        <form class="contact__form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message"></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </section>
       <p id="contact">Contact Us</p>
       <label for="language-selector">Select language:</label>
       <select id="language-selector">
