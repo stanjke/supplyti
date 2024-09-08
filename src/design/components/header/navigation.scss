@@ -1,0 +1,43 @@
+.navigation {
+  position: fixed;
+  z-index: 999999;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $headerColor;
+  /* padding: 1rem 0; */
+}
+
+.navigation__logo {
+  height: 100px;
+  width: 300px;
+}
+
+.navigation__img {
+  width: 100%;
+  height: 100%;
+}
+
+.navigation__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 5px;
+  padding: 0;
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+// LANGUAGE SWITCH

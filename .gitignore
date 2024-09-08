@@ -9,8 +9,14 @@ lerna-debug.log*
 
 node_modules
 dist
+build
 dist-ssr
 *.local
+
+#.env files
+
+.env.dev
+.env.prod
 
 # Temporary files
 .temp

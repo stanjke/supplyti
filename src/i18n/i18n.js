@@ -24,3 +24,6 @@ export const initTranslations = () => {
     handleTranslate();
   });
 };
+
+//TODO:
+// Revwork logic to work through localStorage

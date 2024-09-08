@@ -1,7 +1,8 @@
-import { defineConfig } from "vite";
+import { defineConfig, loadEnv } from "vite";
 import fs from "fs";
 import path from "path";
 
+// Функция для обработки включений в HTML
 const replaceIncludes = (html, filename) => {
   const includeRegex = /<include src="(.+?)"><\/include>/g;
   return html.replace(includeRegex, (_, src) => {
@@ -17,6 +18,7 @@ const replaceIncludes = (html, filename) => {
   });
 };
 
+// Плагин для обработки включений в HTML
 function htmlIncludePlugin() {
   return {
     name: "html-include-plugin",
@@ -27,6 +29,14 @@ function htmlIncludePlugin() {
   };
 }
 
-export default defineConfig({
-  plugins: [htmlIncludePlugin()],
+// Загрузка переменных окружения
+export default defineConfig(({ mode }) => {
+  const env = loadEnv(mode, process.cwd());
+  return {
+    base: env.VITE_BASE_URL || "/",
+    build: {
+      outDir: "build",
+    },
+    plugins: [htmlIncludePlugin()],
+  };
 });

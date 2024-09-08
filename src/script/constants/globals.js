@@ -5,19 +5,23 @@ export const TRANSLATIONS = {};
 export const TRANSLATION_ELEMENT_CLASS = {
   NAVIGATION: ".navigation__name",
   SERVICES: {
-    SERVICE_TITLE: ".services__title",
-    SERVICE_SUBTITLE: ".services__subtitle",
-    SERVICE_DESCRIPTION: ".services_description",
+    TITLE: ".services__title",
+    SUBTITLE: ".services__subtitle",
+    DESCRIPTION: ".services_description",
   },
   ABOUT: {
-    TITLE: "#aboutTitle",
-    DESCRIPTION: "#aboutDescription",
+    TITLE: ".about__title",
+    DESCRIPTION: ".about__description",
   },
 };
 
 export const TRANSLATION_ELEMENT_ID = {
   SERVICES: {
     SERVICE_TITLE: "services_section_title",
+  },
+  ABOUT: {
+    TITLE: "about_us_title",
+    DESCRIPTION: "about_description",
   },
 };
 
