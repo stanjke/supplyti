@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: $headerColor;
   /* padding: 1rem 0; */
 }
 
@@ -15,6 +16,16 @@
   height: 100%;
 }
 
+.navigation__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 5px;
+  padding: 0;
+  margin: 0;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -25,6 +36,8 @@
   clip: rect(0, 0, 0, 0);
   border: 0;
 }
+
+// LANGUAGE SWITCH
 
 .switch {
   position: relative;

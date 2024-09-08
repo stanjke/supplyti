@@ -1,15 +1,17 @@
+/* COLORS */
+$bgColor: #fff;
+$secondaryBgColor: #f7f7f7;
+$white: #fff;
+$headerColor: #1e2d3b;
+$secondaryFontColor: #3d5975;
+$decorateYellow: #edcd1f;
+$buttonColor: #3b3a3a;
+$buttonTextYellow: #edcd1f;
+// $heroTitleTextSize
+
+// BREAKPOINTS
+
 :root {
-  /* COLORS */
-
-  --background-color: #fff;
-  --secondary-background-color: #f7f7f7;
-  --font-white: #fff;
-  --font-primary: #1e2d3b;
-  --font-secondary: #3d5975;
-  --decorate-yellow: #edcd1f;
-  --button-color: #3b3a3a;
-  --button-text-color-yellow: #edcd1f;
-
   /* FONTS */
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
