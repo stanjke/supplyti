@@ -1,0 +1,31 @@
+.title {
+  position: relative;
+  color: $darkBlue;
+  font-size: $titleSize;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-align: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 8px;
+    background-color: $decorateYellow;
+    margin-top: 10px;
+    bottom: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.subtitle {
+  color: $secondaryFontColor;
+  font-size: $subtitleSize;
+  font-weight: 400;
+  text-align: center;
+  //   margin-bottom: 60px;
+}

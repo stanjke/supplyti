@@ -7,7 +7,7 @@ export const TRANSLATION_ELEMENT_CLASS = {
   SERVICES: {
     TITLE: ".services__title",
     SUBTITLE: ".services__subtitle",
-    DESCRIPTION: ".services_description",
+    DESCRIPTION: ".services__description",
   },
   ABOUT: {
     TITLE: ".about__title",
