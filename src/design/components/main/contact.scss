@@ -1,3 +1,10 @@
+.contact {
+  position: relative;
+  background-color: $white;
+  z-index: 2;
+  padding-top: 1px;
+}
+
 #googleForm {
   display: flex;
   flex-direction: column;

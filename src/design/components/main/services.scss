@@ -1,4 +1,9 @@
 .services {
+  position: relative;
+  background-color: $white;
+  z-index: 2;
+  padding-top: 1px;
+
   &__container {
     display: flex;
     justify-content: center;
