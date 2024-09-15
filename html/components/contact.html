@@ -1,25 +1,59 @@
 <section id="contact-section" class="contact">
   <div class="container">
     <h2 class="contact__title title">get in touch</h2>
-    <div class="contact__map"></div>
+    <iframe
+      class="contact__map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1199.5103196193807!2d30.59364048999456!3d50.42855297987602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c57dd85632a3%3A0x60a23243bc1fbf89!2z0KLQpiDQodC40LvRjNCy0LXRgCDQkdGA0LjQtw!5e0!3m2!1sru!2sua!4v1726425761514!5m2!1sua!2sru"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
 
-    <form id="googleForm">
-      <label for="fullName">Full name:</label>
-      <input type="text" id="fullName" name="fullName" />
+    <div class="contact__info">
+      <div class="contact__info__col-one">
+        <div class="contact__inquiries">
+          <h3 class="contact__subtitle subtitle">Inquiries & Feedback</h3>
+          <p class="contact__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, labore!</p>
+        </div>
+        <div class="contact__form-wrapper">
+          <h3 class="contact__subtitle subtitle">
+            <label for="googleForm">Contact Us</label>
+          </h3>
+          <form name="googleForm" id="googleForm" class="contact__form">
+            <label for="fullName">Full name:</label>
+            <input type="text" id="fullName" name="fullName" />
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
 
-      <label for="phone">Phone:</label>
-      <input type="tel" id="phone" name="phone" required />
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required />
 
-      <label for="messageSubject">Message Subject:</label>
-      <input id="messageSubject" name="messageSubject" required />
+            <label for="messageSubject">Message Subject:</label>
+            <input id="messageSubject" name="messageSubject" required />
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
 
-      <button type="submit">Submit</button>
-    </form>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="contact__info__col-two">
+        <div class="contact__visit">
+          <h3 class="contact__subtitle subtitle">Visit Us</h3>
+          <p class="contact__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, labore!</p>
+        </div>
+        <div class="contact__join-our-team">
+          <h3 class="contact__subtitle subtitle">Join Our Team</h3>
+          <p class="contact__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, labore!</p>
+        </div>
+        <div class="contact__qoute">
+          <h3 class="contact__subtitle subtitle">Request a Quote</h3>
+          <p class="contact__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, labore!</p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>

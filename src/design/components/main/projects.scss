@@ -3,4 +3,19 @@
   background-color: $white;
   z-index: 2;
   padding-top: 1px;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  &__item {
+    width: 400px;
+    height: 400px;
+    border: 1px solid $primaryColor;
+  }
 }
